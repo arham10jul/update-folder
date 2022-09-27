@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">name</label>
+    <input type="text" id="i-n" >
+    <br><br>
+    <span id="s-n"></span>
+    <br><br>
+    <label for="">email</label>
+    <input type="text" name="" id="i-e">
+    <span id="s-e"></span>
+    <br><br> 
+    <button type="submit" onclick="fun()">Submit</button>
+    <br><br>
+    <div id="main"></div>
+
+    <script>
+        function fun(){
+             var name = document.getElementById("i-n").value;
+        var email = document.getElementById("i-e").value;
+        if (name=="hello" && email=="ali@gmail.com"){
+            document.getElementById("main").innerHTML = "welcome" + name;
+        
+        }else if () {
+            
+        }
+     }
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <label for="">Enter a name</label>
+    <input type="text" id="ok">
+    <input type="text" id="shi">
+    <button type="Submit" onclick="Fun()">Add</button>
+    <button type="Submit" onclick="cr()">Mul</button>
+    <button type="Submit" onclick="io()">Sub</button>
+    <button type="Submit" onclick="gh()">divide</button>
+    <div id="main"></div>
+
+
+    <script>
+        function Fun(){
+            var form = parseInt(document.getElementById("ok").value);
+            var thi = parseInt(document.getElementById("shi").value);
+            var input =  form+thi;
+            document.getElementById("main").innerHTML = input;
+        }
+        function cr(){
+            var form = document.getElementById("ok").value;
+            var thi = parseInt(document.getElementById("shi").value);
+            var input =  form*thi;
+            document.getElementById("main").innerHTML = input;
+        }
+        function io(){
+            var form = document.getElementById("ok").value;
+            var thi = parseInt(document.getElementById("shi").value);
+            var input =  form-thi;
+            document.getElementById("main").innerHTML = input;
+        }
+        function gh(){
+            var form = document.getElementById("ok").value;
+            var thi = parseInt(document.getElementById("shi").value);
+            var input =  form/thi;
+            document.getElementById("main").innerHTML = input;
+        }
+    </script>
+</body>
+</html>
